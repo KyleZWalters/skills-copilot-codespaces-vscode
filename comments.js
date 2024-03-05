@@ -39,4 +39,5 @@ app.get("/comments/:id/replies", (req, res) => {
 });
 // 12. Define route
 app.get("/comments/:id/replies/:replyId", (req, res) => {
-  res.send(`Reply ID: ${req.params.replyId} of comment
+  res.send(`Reply ID: ${req.params.replyId} of comment ID: ${req.params.id}`);
+});
